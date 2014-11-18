@@ -1,6 +1,7 @@
 PistachoShortener
 =========
 
+This project contains a simple Angularjs + Bootstrap based interface for RichCarmine's team [UrlShortener](https://github.com/SAReyes/UrlShortener2014) project. 
 
 # GitHelp
 ---------
