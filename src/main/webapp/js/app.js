@@ -8,7 +8,7 @@ angular.module('shortener', ['ui.router'])
                     templateUrl: "templates/main/inicio.html",
                     controller: "MainCtrl"
                 });
-            $urlRouterProvider.otherwise('inicio')
+            $urlRouterProvider.otherwise('inicio');
         })
 
     /*.factory('todos', [function(){
