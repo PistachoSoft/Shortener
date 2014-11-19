@@ -5,7 +5,7 @@ angular.module('shortener', ['ui.router'])
 
                 .state('inicio', {
                     url: "/inicio",
-                    templateUrl: "templates/inicio.html",
+                    templateUrl: "templates/main/inicio.html",
                     controller: "MainCtrl"
                 });
             $urlRouterProvider.otherwise('inicio')
@@ -19,13 +19,27 @@ angular.module('shortener', ['ui.router'])
     }])*/
 
     .controller('MainCtrl', [ '$scope', function($scope){
-       
+        //TEST
+        $scope.noresult = true;
+
+        $scope.shortenURL = function(){
+            $scope.shorturl = 'http://pista.cho/OPHASHING';
+            $scope.noresult = false;
+        }
+
+        $scope.ShortURLtoQR = function(){
+
+        }
+
+        $scope.CSVtoShortURL = function(){
+            console.log($scope.form_csv);
+        }
     }])
     
     .directive('footer',function(){
     	return{
     		restrict: 'E',
-    		templateUrl: 'templates/footer.html'
+    		templateUrl: 'templates/components/footer.html'
     	
     	}
     });
